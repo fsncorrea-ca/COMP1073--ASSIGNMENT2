@@ -1,0 +1,35 @@
+
+
+[
+    {
+      "name": "Açai",
+      "image": "img/açai.png",
+      "value": "acai"
+    },
+    {
+      "name": "Banana",
+      "image": "img/banana.png",
+      "value": "banana"
+    },
+    {
+      "name": "Strawberry",
+      "image": "img/strawberry.png",
+      "value": "strawberry"
+    },
+    {
+      "name": "Blueberry",
+      "image": "img/blueberry.png",
+      "value": "blueberry"
+    },
+    {
+      "name": "Raspberry",
+      "image": "img/rasberry.png",
+      "value": "rasberry"
+    },
+    {
+      "name": "Vanilla",
+      "image": "img/vanila.png",
+      "value": "vanilla"
+    }
+  ]
+  

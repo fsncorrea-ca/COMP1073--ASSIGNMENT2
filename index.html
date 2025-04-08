@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Smoothie Order Form</title>
+    
+    <!-- Normalize CSS -->
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+    <script src="js/smoothie.json" defer></script>
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Build Your Smoothie</h1>
+
+        <!-- Smoothie Order Form -->
+        <form id="smoothie-form">
+            <label for="size">Choose Size:</label>
+            <select id="size" required>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+            <!-- Choose your base -->
+            <label for="base">Choose Base:</label>
+            <select id="base" required>
+                <option value="yogurt">Yogurt</option>
+                <option value="almond_milk">Almond Milk</option>
+                <option value="oat_milk">Oat Milk</option>
+                <option value="coconut_water">Coconut Water</option>
+            </select>
+
+            <label for="ingredients">Choose Ingredients (Select multiple):</label>
+            <select id="ingredients" multiple>
+                
+            </select>
+            <!-- The imagens will be show here -->
+            <div class="smoothie-images">
+            </div>
+
+            <label for="sweetness">Sweetness Level:</label>
+            <input type="range" id="sweetness" min="0" max="10" step="1" value="5">
+
+            <!-- Choose your topping -->
+            <label for="topping">Choose Toppings:</label>
+            <select id="topping" required>
+                <option value="none">None</option>
+                <option value="granola">Granola</option>
+                <option value="coconut_flakes">Coconut Flakes</option>
+                <option value="almonds">Almonds</option>
+                <option value="berries">Berries</option>
+            </select>
+            <!-- The button -->
+            <button type="submit">Order Smoothie</button>
+        </form>
+
+        <!-- Order Summary (Initially Hidden) -->
+        <div id="order-summary" style="display: none;">
+            <h2>Your Smoothie Order</h2>
+            <div id="smoothie-description"></div>
+            <div id="smoothie-price"></div>
+        </div>
+    </div>
+</body>
+</html>

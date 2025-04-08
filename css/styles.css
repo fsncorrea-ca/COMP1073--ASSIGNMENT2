@@ -1,0 +1,94 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #FFA500;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select, input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#order-summary {
+    margin-top: 30px;
+    display: none;
+    background-color: #FFA500;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Image style */
+.smoothie-images {
+    display: flex;
+    flex-wrap: wrap;  /* Wrap the image to another line*/
+    justify-content: space-between;  /* Align the image */
+    gap: 20px;  /* Space between images */
+    margin-top: 20px;
+}
+
+/* Style for each item */
+.smoothie-item {
+    display: flex;
+    flex-direction: column; /* Align image the checkbox vertically */
+    width: 48%;  
+    text-align: center;
+    margin-bottom: 20px;  
+}
+
+/* Image style per item */
+.smoothie-item img {
+    width: 100%; 
+    height: auto;  
+    max-height: 150px;  /* To define the max height */
+    object-fit: contain; /* Adjust the image without changes */
+    border-radius: 10px; 
+}
+
+/* Label style */
+.smoothie-item label {
+    margin-top: 10px;  /* Space between iamges and Smothie name */
+    font-size: 1rem;
+}
