@@ -2,27 +2,27 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    margin: 0;
-    padding: 0;
+    margin: 0;  /* Remove default margin */
+    padding: 0;  /* Remove default padding */
 }
-/* I choose the orange color to be some fresh to the user*/
+/* Container style: A centered box with an orange background to catch attention */
 .container {
-    width: 50%;
-    margin: 20px auto;
-    background-color: #FFA500;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    width: 50%; /* Set container width to 50% of the viewport */
+    margin: 20px auto;  /* Auto-center the container horizontally, with some top/bottom margin */
+    background-color: #FFA500; /* I choose the orange color to be more summer */
+    padding: 20px; /* Add padding inside the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; /* Rounded corners for the container */
 }
 
 h1 {
-    text-align: center;
-    color: #333;
+    text-align: center; /* Center the text */
+    color: #333; /* Dark gray color */
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
     gap: 15px;
 }
 
@@ -36,14 +36,14 @@ select, input {
     border-radius: 5px;
     border: 1px solid #ccc;
 }
-
+/* Button styling: Green button with hover effect */
 button {
     background-color: #28a745;
     color: white;
-    padding: 10px;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
+    padding: 10px; /* Add padding to the button */
+    border: none; /* Remove border */
+    font-size: 1.2rem; /* Larger font size for readability */
+    cursor: pointer; /* Pointer cursor on hover to indicate it's clickable */
     border-radius: 5px;
     transition: background-color 0.3s;
 }
@@ -51,16 +51,16 @@ button {
 button:hover {
     background-color: #218838;
 }
-
+/* Order summary section */
 #order-summary {
-    margin-top: 30px;
-    display: none;
+    margin-top: 30px; /* Space above the order summary */
+    display: none; /* Hidden by default */
     background-color: #FFA500;
     padding: 20px;
     border-radius: 5px;
 }
 
-/* Image style */
+/* Image style for smothies */
 .smoothie-images {
     display: flex;
     flex-wrap: wrap;  /* Wrap the image to another line*/
